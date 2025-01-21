@@ -17,7 +17,7 @@ app.get('/data', async (req, res) => {
         console.log("fetching data");
       // Query the database
       const result = await sql`SELECT * FROM event;`;
-      console.log("after result", result);
+      //console.log("after result", result);
       res.json(result);
     } catch (error) {
       console.error('Error fetching data:', error);
