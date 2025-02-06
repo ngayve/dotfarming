@@ -2,8 +2,8 @@ import cron from 'node-cron';
 import sql from './db.js'
 import { getNftBalance } from './blockchain.js';
 
-cron.schedule('*/1 * * * *', async () => {
-    console.log("Running NFT balance update every 1 minute...");
+cron.schedule('0 0 * * *', async () => {
+    console.log("Running NFT balance update every day...");
     try {
         //console.log("fetching data");
         // Query the database
