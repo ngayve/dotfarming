@@ -11,8 +11,13 @@
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
     "express": "^4.21.2",
+    "node-cron": "^3.0.3",
     "postgres": "^3.4.5"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node-cron": "^3.0.11"
+  }
 }
